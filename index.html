@@ -11,6 +11,21 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<style>
+    body {
+  padding: 25px;
+  background-color:black;
+  color: black;
+  font-size: 25px;
+}
+    .dark-mode {
+  background-color:white;
+  color: black;}
+  .dark-mode button{
+      padding: 10px;
+      color: blanchedalmond;
+  }
+</style>
 
 <body>
     <div class="site-main-wrapper">
@@ -30,10 +45,10 @@
         </div>
         <header>
             <div class="container">
-                <nav id="main-nav" class="flex items-center justify-between">
+              <div class="navbar"><nav id="main-nav" class="flex items-center justify-between">
                     <div class="left flex items-center">
                         <div class="branding">
-                            <img src="./images/logo.svg" alt="">
+                          <a href="#"><img src="./images/logo.svg" alt="">  </a>  
                         </div>
                         <div>
                             <a href="#">Home</a>
@@ -45,8 +60,10 @@
                     </div>
                     <div class="right">
                         <button class="btn btn-primary">Contact</button>
+                        <button onclick="myFunction()">Toggle dark mode</button>
                     </div>
                 </nav>
+            </div>  
                 <div class="hero flex items-center justify-between">
                     <div class="left flex-1 flex justify-center">
                         <img src="./images/man.png" alt="">
@@ -352,6 +369,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+        function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+    </script>
 </body>
 
 </html>
