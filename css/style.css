@@ -10,6 +10,7 @@
 
 body{
     font-family:'Poppins',sans-serif;
+    overflow-x: hidden;
 }
 
 html{
