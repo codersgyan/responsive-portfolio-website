@@ -157,6 +157,11 @@ section.about .social a{
 section.about .social a:hover{
     background:var(--primary);
 }
+ #pic{
+   
+    height: 200px;
+    
+}
 section.about .social a img{
     width:100%;
     height:100%;
@@ -244,6 +249,7 @@ section.freelancer p{
     font-family:'Lato', sans-serif;
 }
 
+
 section.reviews .slider .slide img{
     width:100px;
     height:100px;
@@ -252,10 +258,11 @@ section.reviews .slider .slide img{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    object-fit:cover;
+    object-fit:fill;
     margin-bottom:2rem;
 }
 section.reviews .slider .slide{
+    margin-top: 20px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -398,14 +405,16 @@ section.blog .card-wrapper .card .card-content a.read-more{
 
 section.contact .card-wrapper{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap:3rem;
 }
 section.contact .card-wrapper .card{
     text-align: center;
 }
 section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    max-height: 4rem;
 }
 section.contact .card-wrapper .card h1{
     font-weight:400;
